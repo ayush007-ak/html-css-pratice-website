@@ -1,5 +1,11 @@
-.footer{
-    background: hsl(240, 100%, 50%);
-    color: rgb(67, 44, 131);
-    height: 400px;
+/*core styles*/
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica,Arial, Helvetica, sans-serif;
+    background: rgb(62, 62, 238);
+    color: white;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
 }
