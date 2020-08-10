@@ -3,9 +3,165 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica,Arial, Helvetica, sans-serif;
-    background: rgb(62, 62, 238);
+    background:darkslategrey;
     color: white;
     font-size: 1.1em;
     line-height: 1.5;
     text-align: center;
 }
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2 , h3{
+    margin: 0;
+    padding: 1em 0;
+}
+
+p{
+    margin: 0;
+    padding: 1em 0;
+}
+
+.btn{
+    background: lightskyblue;
+    color: blue;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    display: inline-block;
+    margin: .5em 0;
+}
+
+.btn-hover{
+    background: white;
+    color: violet;
+}
+
+
+/*header*/
+
+
+#showcase{
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+}
+
+#showcase .bg-image{
+    position: absolute;
+    background: #333;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.4;  
+
+}
+
+#showcase h1{
+padding-top: 100px;
+padding-bottom: 0;
+}
+
+#showcase .content.wrap, 
+#section-a .content-wrap{
+    padding: 0 1.5em;
+}
+
+
+
+/* sectaion A*/
+
+#section-a{
+    background: #eaeaea;
+    color: #333;
+    padding: 2em;
+}
+
+
+/*  section B*/
+
+#section-b{
+    padding: 2em 1em 1em;
+}
+
+#section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#section-b li{
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+}
+
+.card-content {
+    padding: 1.5em;
+}
+
+/*section C*/
+
+#section-c {
+    background: #fff;
+    color: #333;
+    padding: 2em;
+}
+
+/* section c*/
+
+#section-d .box{
+    padding: 2em;
+    color: white;
+}
+
+#section-d .box:first-child {
+    background: orange;
+
+}
+
+
+/*footer*/
+
+#main-footer{
+    padding: 2em;
+    background: rgb(19, 7, 24);
+    color: white;
+    text-align: center;
+    
+}
+
+
+#main-footer a {
+    color: #2690d4;
+    text-decoration: none;
+}
+
+
+@media (min-width: 700px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr repeat (2, min-max(auto, 25em))1fr;
+    }
+  
+
+    .content-wrap, #section-b ul {
+    grid-column: 2/4;
+    }
+
+    
+.box, #main-footer div{
+    grid-column: span 2;
+}
+}
+
+
+
+
